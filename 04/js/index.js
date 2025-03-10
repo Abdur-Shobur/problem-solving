@@ -8,7 +8,7 @@ const helloWorld = () => {
 // helloWorld();
 
 /*=====================
-- 1.   Reverse a String
+- 0.  Run Hello world
 =======================*/
 const reverseStringOptimized = (str = '') => {
 	let arr = str.split('');
@@ -17,7 +17,7 @@ const reverseStringOptimized = (str = '') => {
 
 	while (left < right) {
 		[arr[left], arr[right]] = [arr[right], arr[left]]; // Swap
-		// console.log(arr);
+		console.log(arr);
 		left++;
 		right--;
 	}
@@ -34,7 +34,7 @@ const reverseStringNaive = (str = '') => {
 };
 
 // Test String
-const testString = 'abcdefghijklmnopqrstuvwxyz'.repeat(10000); // Large string
+const testString = 'abcdefghijklmnopqrstuvwxyz'; // Large string
 
 // Measure Naive Approach
 console.time('Naive Approach');
