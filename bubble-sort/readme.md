@@ -1,0 +1,11 @@
+- 0.  Run Hello world
+- 1.  Reverse a String
+- 2.  Check if a Number is Prime
+- 3.  Find the Factorial of a Number
+- 4.  Check if a String is a Palindrome
+- 5.  Find the Largest Number in an Array
+- 6.  Sum of All Numbers in an Array
+- 7.  Remove Duplicates from an Array
+- 8.  Find the Fibonacci Sequence up to n Terms
+- 9.  Count the Number of Vowels in a String
+- 10. Find the Second Largest Number in an Array

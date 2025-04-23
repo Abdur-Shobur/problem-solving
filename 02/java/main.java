@@ -1,11 +1,13 @@
-/*=====================
-- 0.  Run Hello world
-=======================*/
-// public class main {
-//     public static void main(String[] args) {
-//         System.out.println("Hello World");
-//     }
-// }
+/*
+|--------------------------------------------------------------------------
+| 0.  Run Hello world
+|--------------------------------------------------------------------------
+| public class main {
+|     public static void main(String[] args) {
+|         System.out.println("Hello World");
+|     }
+| }
+ */
 
 public class main {
     public static void main(String[] args) {
@@ -13,12 +15,17 @@ public class main {
         // greet("Hello");
         // System.out.println(reverseString("Hello Test"));
         reverseLoopString("Hello Test");
+        // helloWorld("tasdasdasd");
 
     }
 
     // New function
     public static void greet(String x) {
         System.out.println(x);
+    }
+
+    public static void helloWorld(String y) {
+        System.out.println(y);
     }
 
     // reverse string
