@@ -5,9 +5,14 @@ const array = [1, 9, 2, 6, 9, 345, 12, 6, 2, 4, 62, 346, 214, 345, 3452];
 =======================*/
 
 function ascDscSort(my_array = [], sort = 'asc') {
+	let countJ = 0;
 	const len = my_array.length;
 	for (let i = 0; i < len - 1; i++) {
+		console.log(i, 'i');
 		for (let j = 0; j < len - 1 - i; j++) {
+			console.log(j, 'j');
+			countJ++;
+
 			// if ascending
 			if (sort === 'asc') {
 				if (my_array[j] > my_array[j + 1]) {
@@ -26,9 +31,11 @@ function ascDscSort(my_array = [], sort = 'asc') {
 		}
 	}
 
+	console.log(countJ);
+
 	return my_array;
 }
-// console.log(ascDscSort(array, 'desc'));
+console.log(ascDscSort(array, 'asc'));
 
 /*=====================
 -  2 : Sort Array ascending and descending order first half
@@ -115,4 +122,4 @@ function kPass(my_array = [], k = 0) {
 	return my_array;
 }
 
-console.log(kPass(array, 3));
+// console.log(kPass(array, 3));
