@@ -1,1 +1,2 @@
-print('test print')
+myNum = int('2321')
+print(myNum)

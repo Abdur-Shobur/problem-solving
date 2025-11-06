@@ -8,9 +8,7 @@ function ascDscSort(my_array = [], sort = 'asc') {
 	let countJ = 0;
 	const len = my_array.length;
 	for (let i = 0; i < len - 1; i++) {
-		console.log(i, 'i');
 		for (let j = 0; j < len - 1 - i; j++) {
-			console.log(j, 'j');
 			countJ++;
 
 			// if ascending
@@ -31,11 +29,8 @@ function ascDscSort(my_array = [], sort = 'asc') {
 		}
 	}
 
-	console.log(countJ);
-
 	return my_array;
 }
-console.log(ascDscSort(array, 'asc'));
 
 /*=====================
 -  2 : Sort Array ascending and descending order first half
@@ -123,3 +118,21 @@ function kPass(my_array = [], k = 0) {
 }
 
 // console.log(kPass(array, 3));
+
+// 29-7-25
+
+// bubble sort
+function bubbleSort(arr = []) {
+	let len = arr.length;
+
+	for (let i = 0; i < len - 1; i++) {
+		for (let j = 0; j < len - 1 - i; j++) {
+			if (arr[j] > arr[j + 1]) {
+				let temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
+		}
+	}
+	return arr;
+}
